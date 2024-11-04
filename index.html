@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeverSpamBot - Smart Anti-Spam Solution for Telegram</title>
+    <style>
+        body {
+            font-family: "Courier New", Courier, monospace;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background-color: #1c1c1c;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 188, 212, 0.2);
+        }
+        h1, h2 {
+            color: #00bcd4;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #00bcd4;
+            color: #121212;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #008ba3;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        code {
+            display: block;
+            background-color: #1e1e1e;
+            padding: 10px;
+            border-radius: 5px;
+            color: #c0c0c0;
+            overflow-x: auto;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+        .highlight {
+            color: #ff4081;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>NeverSpamBot</h1>
+        <p>Your go-to tool for eliminating spam while keeping your Telegram groups clean and enjoyable.</p>
+
+        <div class="section">
+            <h2>Why Use NeverSpamBot?</h2>
+            <ul>
+                <li><strong class="highlight">99% Spam Detection Rate:</strong> Effectively removes nearly all spam with minimal false positives.</li>
+                <li><strong class="highlight">No Captcha Needed:</strong> Stops spammers without frustrating your real users.</li>
+                <li><strong class="highlight">Non-Intrusive:</strong> Posts minimal notifications and only when absolutely necessary.</li>
+                <li><strong class="highlight">Smart AI Filters:</strong> Learns and improves over time, adapting to new spam tactics.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>How It Works</h2>
+            <ol>
+                <li><strong class="highlight">Tracks New Members:</strong> Filters messages from users who joined after the bot was added.</li>
+                <li><strong class="highlight">Context-Based Detection:</strong> Uses machine learning to analyze and understand message content.</li>
+                <li><strong class="highlight">Language Support:</strong> Automatically detects and supports multiple languages:</li>
+                <ul>
+                    <li>Arabic (arb)</li>
+                    <li>Chinese (zho)</li>
+                    <li>English (eng)</li>
+                    <li>French (fra)</li>
+                    <li>Italian (ita)</li>
+                    <li>Japanese (jpn)</li>
+                    <li>Malayalam (mal)</li>
+                    <li>Persian (per)</li>
+                    <li>Portuguese (por)</li>
+                    <li>Spanish (spa)</li>
+                    <li>Ukrainian (ukr)</li>
+                    <li>Korean (kor)</li>
+                    <li>Hebrew (heb)</li>
+                </ul>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>Commands & Features</h2>
+            <p><strong class="highlight">Language Settings:</strong> Customize the bot's language with commands like:</p>
+            <code>/set_language eng /set_language spa /set_language zho</code>
+            <p><strong class="highlight">Context Filtering:</strong> Enable or disable specific content filters:</p>
+            <code>
+                /set_context_animation false<br>
+                /set_context_document false<br>
+                /set_context_contact false<br>
+                /set_context_video_note false<br>
+                /set_context_video false<br>
+                /set_context_photo false<br>
+                /set_context_buttons false<br>
+                /set_context_forwarded false<br>
+                /set_context_banks false<br>
+                /set_context_bets false<br>
+                /set_context_crypto false<br>
+                /set_context_digits false<br>
+                /set_context_drugs false<br>
+                /set_context_finance false<br>
+                /set_context_gov false<br>
+                /set_context_help false<br>
+                /set_context_inbox false<br>
+                /set_context_links false<br>
+                /set_context_links_masked false<br>
+                /set_context_mobile false<br>
+                /set_context_money false<br>
+                /set_context_offensive false<br>
+                /set_context_porn false<br>
+                /set_context_rent false<br>
+                /set_context_repeated false<br>
+                /set_context_scam false<br>
+                /set_context_sellbuy false<br>
+                /set_context_services false<br>
+                /set_context_social false<br>
+                /set_context_suspicious false<br>
+                /set_context_taxi false<br>
+                /set_context_trading false<br>
+                /set_context_work false
+            </code>
+            <p><strong class="highlight">Manual Approval:</strong> Use <code>/notspam @username</code> to review and approve messages if needed.</p>
+        </div>
+
+        <div class="section">
+            <h2>Keeping Your Group Safe</h2>
+            <p>NeverSpamBot monitors and filters:</p>
+            <ul>
+                <li><strong class="highlight">Suspicious Content:</strong> Links, financial offers, unsolicited invites, and more.</li>
+                <li><strong class="highlight">Media Filters:</strong> Photos, videos, and emojis based on admin settings.</li>
+            </ul>
+            <p><strong class="highlight">What to Do If You’re Flagged:</strong> Simply write a normal, non-suspicious message, or wait for an admin to approve you. The bot is designed to adapt and learn that you're a real participant.</p>
+        </div>
+
+        <div class="section">
+            <h2>Report Issues or Feedback</h2>
+            <p>Found spam that bypassed our filters? Forward it to <a href="https://t.me/NeverSpamBot">@NeverSpamBot</a>. Have suggestions or want to report false positives? We’re constantly improving!</p>
+        </div>
+
+        <div class="section">
+            <a href="https://t.me/NeverSpamBot" class="button">Contact @NeverSpamBot</a>
+        </div>
+    </div>
+</body>
+</html>
